@@ -37,6 +37,7 @@ export const ProfileCard: React.FC = () => {
                 width={360}
                 height={360}
                 priority
+                unoptimized
                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 onError={() => setImageError(true)}
               />
