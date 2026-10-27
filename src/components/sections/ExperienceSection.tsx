@@ -8,9 +8,9 @@ import { Calendar, MapPin, CheckCircle2 } from "lucide-react";
 
 export const ExperienceSection: React.FC = () => {
   return (
-    <section id="experience" aria-label="Work Experience" className="scroll-mt-28">
+    <section id="experience" aria-label="Work Experience" className="scroll-mt-28 w-full">
       <SectionHeader
-        number="02"
+        number="03"
         tagline="Industry Internship"
         title="Work Experience"
         subtitle="Practical engineering experience developing full-stack web platforms, responsive user interfaces, and REST API services."
@@ -24,7 +24,7 @@ export const ExperienceSection: React.FC = () => {
               <div className="w-1.5 h-1.5 rounded-full bg-[#FF713B]" />
             </div>
 
-            <div className="rounded-3xl bg-[#1A1918] border border-[#2A2826] p-6 sm:p-8 hover:border-[#3E3B38] transition-all duration-300 shadow-xl">
+            <div className="rounded-3xl bg-[#1A1918] border border-[#2A2826] p-6 sm:p-8 hover:border-[#3E3B38] transition-all duration-300 shadow-xl w-full">
               {/* Header Info */}
               <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
                 <div>

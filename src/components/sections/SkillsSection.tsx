@@ -37,47 +37,49 @@ export const SkillsSection: React.FC = () => {
   };
 
   return (
-    <section id="skills" aria-label="Technical Skills" className="scroll-mt-28">
+    <section id="skills" aria-label="Technical Skills" className="scroll-mt-28 w-full">
       <SectionHeader
-        number="03"
+        number="04"
         tagline="Core Competencies"
         title="Technical Skills"
         subtitle="Comprehensive technical stack covering system software, full-stack web engineering, database architecture, and computer science foundations."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         {SKILL_CATEGORIES.map((cat, idx) => (
           <div
             key={idx}
-            className="rounded-3xl bg-[#1A1918] border border-[#2A2826] p-6 sm:p-7 hover:border-[#3E3B38] transition-all duration-300 shadow-lg group"
+            className="rounded-3xl bg-[#1A1918] border border-[#2A2826] p-6 hover:border-[#3E3B38] transition-all duration-300 shadow-lg group flex flex-col justify-between"
           >
-            {/* Category Header */}
-            <div className="flex items-center gap-3 mb-5 pb-3 border-b border-[#2A2826]">
-              <div className="p-2 rounded-xl bg-[#262422] group-hover:bg-[#FF713B]/10 transition-colors">
-                {getCategoryIcon(idx)}
-              </div>
-              <h3 className="font-editorial text-lg sm:text-xl font-bold uppercase tracking-tight text-white group-hover:text-[#FF713B] transition-colors">
-                {cat.title}
-              </h3>
-            </div>
-
-            {/* Skills List */}
-            <div className="space-y-2.5">
-              {cat.skills.map((skill, sIdx) => (
-                <div
-                  key={sIdx}
-                  className="flex items-center justify-between p-2.5 rounded-xl bg-[#141312]/70 border border-[#242220] hover:border-[#33302C] transition-colors"
-                >
-                  <span className="text-xs sm:text-sm font-medium text-white font-mono">
-                    {skill.name}
-                  </span>
-                  {skill.level && (
-                    <span className="text-[11px] font-mono text-[#9E9A95] px-2 py-0.5 rounded bg-[#1E1D1B] border border-[#2A2826]">
-                      {skill.level}
-                    </span>
-                  )}
+            <div>
+              {/* Category Header */}
+              <div className="flex items-center gap-3 mb-5 pb-3 border-b border-[#2A2826]">
+                <div className="p-2 rounded-xl bg-[#262422] group-hover:bg-[#FF713B]/10 transition-colors">
+                  {getCategoryIcon(idx)}
                 </div>
-              ))}
+                <h3 className="font-editorial text-base sm:text-lg font-bold uppercase tracking-tight text-white group-hover:text-[#FF713B] transition-colors">
+                  {cat.title}
+                </h3>
+              </div>
+
+              {/* Skills List */}
+              <div className="space-y-2">
+                {cat.skills.map((skill, sIdx) => (
+                  <div
+                    key={sIdx}
+                    className="flex items-center justify-between p-2 rounded-xl bg-[#141312]/70 border border-[#242220] hover:border-[#33302C] transition-colors"
+                  >
+                    <span className="text-xs font-medium text-white font-mono">
+                      {skill.name}
+                    </span>
+                    {skill.level && (
+                      <span className="text-[10px] font-mono text-[#9E9A95] px-1.5 py-0.5 rounded bg-[#1E1D1B] border border-[#2A2826]">
+                        {skill.level}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ))}

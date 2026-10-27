@@ -7,7 +7,7 @@ export interface Project {
   role: string;
   date: string;
   description: string;
-  keyContributions: string[];
+  keyContributions?: string[];
   metrics?: {
     label: string;
     value: string;
@@ -51,6 +51,28 @@ export interface CodingProfile {
   accentBg: string;
   iconName: string;
   highlightText: string;
+  solvedCount?: number;
+  contestCount?: number;
+}
+
+export interface ContestRatingPoint {
+  contestName: string;
+  shortName: string;
+  date: string;
+  rating: number;
+  rank?: number;
+  delta?: number;
+}
+
+export interface PlatformGrowthData {
+  platform: string;
+  currentRating: number;
+  maxRating: number;
+  tier: string;
+  tierColor: string;
+  contestsCount: number;
+  solvedCount: number;
+  ratingHistory: ContestRatingPoint[];
 }
 
 export interface Achievement {

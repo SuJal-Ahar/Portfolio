@@ -1,11 +1,10 @@
 import React from "react";
 import { Navigation } from "@/components/layout/Navigation";
-import { ProfileCard } from "@/components/layout/ProfileCard";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { CompetitiveGrowthSection } from "@/components/sections/CompetitiveGrowthSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
-import { CodingProfilesSection } from "@/components/sections/CodingProfilesSection";
 import { AchievementsSection } from "@/components/sections/AchievementsSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -18,26 +17,21 @@ export default function Home() {
       <Navigation />
 
       {/* Main Container Layout */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-12 items-start">
-          {/* Desktop Sticky Left Profile Card (Col 1 to 4) */}
-          <div className="lg:col-span-4 xl:col-span-4 lg:sticky lg:top-24 mb-12 lg:mb-0">
-            <ProfileCard />
-          </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10 w-full">
+        {/* Initial Hero Section with Scroll-Linked Profile Image Transition */}
+        <HeroSection />
 
-          {/* Right-Side Scrolling Content Area (Col 5 to 12) */}
-          <main className="lg:col-span-8 xl:col-span-8 space-y-24 md:space-y-32">
-            <HeroSection />
-            <ProjectsSection />
-            <ExperienceSection />
-            <SkillsSection />
-            <CodingProfilesSection />
-            <AchievementsSection />
-            <EducationSection />
-            <ContactSection />
-            <Footer />
-          </main>
-        </div>
+        {/* Full-Width Content Sections (No permanent sidebar!) */}
+        <main className="w-full space-y-24 md:space-y-32 pt-4">
+          <ProjectsSection />
+          <CompetitiveGrowthSection />
+          <ExperienceSection />
+          <SkillsSection />
+          <AchievementsSection />
+          <EducationSection />
+          <ContactSection />
+          <Footer />
+        </main>
       </div>
     </div>
   );
