@@ -29,16 +29,16 @@ export const ProfileCard: React.FC = () => {
       <div>
         {/* Profile Image with Rounded Container */}
         <div className="relative mb-6 group">
-          <div className="w-full aspect-square max-h-[290px] rounded-2xl overflow-hidden bg-gradient-to-br from-zinc-100 to-zinc-200 relative border border-zinc-200 shadow-inner flex items-center justify-center">
+          <div className="w-full aspect-[440/495] rounded-2xl overflow-hidden bg-gradient-to-br from-zinc-100 to-zinc-200 relative border border-zinc-200 shadow-inner flex items-center justify-center">
             {!imageError ? (
               <Image
                 src={PERSONAL_INFO.portraitUrl}
                 alt={PERSONAL_INFO.name}
-                width={360}
-                height={360}
+                width={440}
+                height={495}
                 priority
                 unoptimized
-                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 onError={() => setImageError(true)}
               />
             ) : (

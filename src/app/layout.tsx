@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Sujal Ahar Portfolio",
     images: [
       {
-        url: "/assets/sujal-photo.png",
+        url: "/assets/sujal-profile.png",
         width: 1200,
         height: 630,
         alt: "Sujal Ahar Portfolio",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Sujal Ahar | Software Developer & AI Systems Engineer",
     description:
       "Building software that solves real problems. Full-stack engineering, AI platforms, and algorithmic systems.",
-    images: ["/assets/sujal-photo.png"],
+    images: ["/assets/sujal-profile.png"],
   },
   icons: {
     icon: "/favicon.ico",

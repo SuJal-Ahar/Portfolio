@@ -21,7 +21,7 @@ export const PERSONAL_INFO = {
   phone: "+91-7000307760",
   github: "https://github.com/SuJal-Ahar",
   linkedin: "https://www.linkedin.com/in/sujal-ahar-0418bb2a8/",
-  portraitUrl: "/assets/sujal-photo.png",
+  portraitUrl: "/assets/sujal-profile.png",
   passportPhotoUrl: "/assets/sujal-passport.jpg",
   totalProblemsSolved: "1,400+",
   college: "National Institute of Technology Raipur",
