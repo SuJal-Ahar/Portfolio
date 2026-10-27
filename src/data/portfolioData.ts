@@ -25,8 +25,7 @@ export const PERSONAL_INFO = {
   passportPhotoUrl: "/assets/sujal-passport.jpg",
   totalProblemsSolved: "1,400+",
   college: "National Institute of Technology Raipur",
-  degree: "B.Tech in Information Technology (2023–2027)",
-  cgpa: "7.66 / 10",
+  degree: "B.Tech in Information Technology",
 };
 
 export const NAV_ITEMS: NavItem[] = [
@@ -356,28 +355,10 @@ export const EDUCATION_LIST: Education[] = [
     degree: "Bachelor of Technology (B.Tech)",
     field: "Information Technology",
     period: "2023 – 2027",
-    score: "7.66 / 10",
-    scoreLabel: "Current CGPA",
     location: "Raipur, Chhattisgarh",
     highlights: [
       "Core coursework in OS, Networks, DBMS, OOP, and Distributed Systems.",
       "Active participant in technical symposiums, hackathons, and CP rounds.",
     ],
-  },
-  {
-    institution: "The Radiant Way School, Raipur",
-    degree: "Senior Secondary School (ISC - 12th)",
-    period: "2020 – 2022",
-    score: "89.4%",
-    scoreLabel: "Class XII Board",
-    location: "Raipur, Chhattisgarh",
-  },
-  {
-    institution: "The Radiant Way School, Raipur",
-    degree: "Higher Secondary School (ICSE - 10th)",
-    period: "2018 – 2020",
-    score: "86.2%",
-    scoreLabel: "Class X Board",
-    location: "Raipur, Chhattisgarh",
   },
 ];

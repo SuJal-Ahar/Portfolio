@@ -86,7 +86,7 @@ export const ProfileCard: React.FC = () => {
         <div className="space-y-1.5 mb-6 text-xs text-zinc-600 font-mono">
           <div className="flex items-center gap-2">
             <GraduationCap className="w-3.5 h-3.5 text-[#FF713B] shrink-0" />
-            <span className="truncate">NIT Raipur (B.Tech IT • 7.66 CGPA)</span>
+            <span className="truncate">NIT Raipur • B.Tech in IT</span>
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="w-3.5 h-3.5 text-[#FF713B] shrink-0" />

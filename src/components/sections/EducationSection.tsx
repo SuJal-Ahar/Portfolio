@@ -10,9 +10,9 @@ export const EducationSection: React.FC = () => {
     <section id="education" aria-label="Academic Background" className="scroll-mt-28">
       <SectionHeader
         number="06"
-        tagline="Academic Qualifications"
+        tagline="Academic Background"
         title="Education"
-        subtitle="Formal education in Information Technology at an Institute of National Importance and school foundations in Raipur."
+        subtitle="Undergraduate engineering studies in Information Technology at the National Institute of Technology Raipur."
       />
 
       <div className="space-y-6">
@@ -43,15 +43,26 @@ export const EducationSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Score Pill */}
-                <div className="px-4 py-2 rounded-2xl bg-[#141312] border border-[#242220] text-right">
-                  <div className="text-[10px] font-mono uppercase tracking-wider text-[#9E9A95]">
-                    {edu.scoreLabel}
+                {/* Score or Program Pill */}
+                {edu.score ? (
+                  <div className="px-4 py-2 rounded-2xl bg-[#141312] border border-[#242220] text-right">
+                    <div className="text-[10px] font-mono uppercase tracking-wider text-[#9E9A95]">
+                      {edu.scoreLabel}
+                    </div>
+                    <div className="font-editorial text-xl font-extrabold text-white">
+                      {edu.score}
+                    </div>
                   </div>
-                  <div className="font-editorial text-xl font-extrabold text-white">
-                    {edu.score}
+                ) : (
+                  <div className="px-4 py-2 rounded-2xl bg-[#141312] border border-[#242220] text-right">
+                    <div className="text-[10px] font-mono uppercase tracking-wider text-[#FF713B]">
+                      Program
+                    </div>
+                    <div className="font-editorial text-base sm:text-lg font-bold text-white">
+                      Undergraduate
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
 
               {/* Meta information */}

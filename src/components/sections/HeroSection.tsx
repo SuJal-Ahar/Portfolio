@@ -84,8 +84,8 @@ export const HeroSection: React.FC = () => {
               <span className="text-white">AI-powered applications</span>.
             </p>
             <p>
-              Currently in my 3rd year of Information Technology at{" "}
-              <span className="text-[#EDEDED]">National Institute of Technology Raipur</span> (CGPA 7.66). Passionate about competitive programming with{" "}
+              Currently studying Information Technology at{" "}
+              <span className="text-[#EDEDED]">National Institute of Technology Raipur</span>. Passionate about competitive programming with{" "}
               <span className="text-[#FF713B] font-mono font-medium">1,400+ problems solved</span> and robust system design.
             </p>
           </div>

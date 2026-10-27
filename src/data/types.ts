@@ -91,8 +91,8 @@ export interface Education {
   degree: string;
   field?: string;
   period: string;
-  score: string;
-  scoreLabel: string;
+  score?: string;
+  scoreLabel?: string;
   location: string;
   highlights?: string[];
 }
