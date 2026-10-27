@@ -29,7 +29,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sujalahar.vercel.app"),
+  metadataBase: new URL("https://sujalahar.tech"),
+  alternates: {
+    canonical: "https://sujalahar.tech",
+  },
   title: "Sujal Ahar | Software Developer & AI Systems Engineer",
   description:
     "Personal portfolio of Sujal Ahar — Full-stack developer and AI systems engineer studying at NIT Raipur. Specializing in high-performance backends, code intelligence, and competitive programming.",
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sujalahar.vercel.app",
+    url: "https://sujalahar.tech",
     title: "Sujal Ahar — Software Developer & AI Systems Engineer",
     description:
       "Building software that solves real problems. Full-stack engineering, AI platforms, and algorithmic systems.",
